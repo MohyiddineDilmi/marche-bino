@@ -1,0 +1,37 @@
+.title_primary :local {
+    font-size: 72px;
+    color: #000000;
+    font-family: "NCTTorin-ExtraBold";
+    margin: 0% 10% 0% 10%;
+    text-align: center;
+
+    /** TEXT GRADIENT */
+    background: linear-gradient( 135deg, #42d392, #647eff );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.title_primary_white :local {
+    font-size: 48px;
+    color: #ffffff;
+    font-family: "NCTTorin-ExtraBold";
+    margin: 0% 10% 0% 10%;
+    text-align: center;
+}
+
+.title :local {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "NCTTorin-Bold";
+}
+  
+.text :local {
+    font-size: 14px;
+    color: #555555;
+    font-family: "NCTTorin-Regular";
+    margin: 0% 15% 0% 15%;
+    text-align: center;
+}
+

@@ -1,0 +1,11 @@
+.services_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.service_card {
+    margin: 5rem;
+    padding: 5rem;
+}
