@@ -1,28 +1,32 @@
 import React from 'react';
 import AppBar from './AppBar';
 import Header from './Header';
-import ServivesList from './ServicesList';
-import imgPath from '../../assets/header-img.png';
+import ServicesList from './ServicesList';
+import imgPath from '../../assets/header-img-2.png';
+import Projects from './Projects';
+import Footer from './Footer';
+import Technologies from './Technologies';
 
 function Home() {
     return (
         <>
-        <div 
+        <div
             style={{
-                backgroundImage: `url(${imgPath})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center center",
-                height: "40rem"
+                backgroundColor: "black",
             }}
         >
             <AppBar/>
             <Header/>
+            <ServicesList/>
         </div>
-        <div>
-            <ServivesList/>
+        <Technologies/>
+        <div
+            style={{
+                backgroundColor: "black",
+            }}
+            >
+            <Footer/>
         </div>
-            
         </>
     );
 }

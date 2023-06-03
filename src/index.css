@@ -13,6 +13,11 @@ code {
 }
 
 @font-face {
+  font-family: 'NCTTorin-Light';
+  src: url('assets/fonts/NCTTorin-Light.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'NCTTorin-Regular';
   src: url('assets/fonts/NCTTorin-Regular.ttf') format('truetype');
 }

@@ -1,0 +1,14 @@
+.footer-container {
+    padding: 5rem;
+}
+
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text-item {
+    width: 30%;
+}

@@ -3,9 +3,25 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: black;
+    padding-bottom: 1rem;
 }
 
-.service_card {
-    margin: 5rem;
-    padding: 5rem;
+.srvice-card {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+  
+.textContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 620px;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
 }
