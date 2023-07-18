@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect }, React from "react";
 
 const ImagePlayer = ({ images, duration }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
