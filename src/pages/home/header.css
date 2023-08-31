@@ -11,5 +11,12 @@
     display: inline;
 }
 
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        margin: 0rem;
+    }
+}
+
   
   

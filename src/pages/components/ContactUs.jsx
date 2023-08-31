@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from '../../modules/styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClone, faCheck } from '@fortawesome/free-solid-svg-icons';
-import { faDiscord, faInstagram, faYoutube, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 function ContactUs () {
@@ -54,28 +54,34 @@ function ContactUs () {
     return (
         <>
         <div className="email-conatiner" style={socialMediaStyle}>
-          <p className={styles.title}>fly@airborne.ca</p>
+          <p className={styles.title}>fly@airbornecanada.com</p>
           <button onClick={handleButtonClick} style={buttonStyle}>
               <FontAwesomeIcon icon={logo} style={iconStyle}/>
           </button>
+          <p className={styles.title}>Address</p>
+          <p className={styles.text_no_margin}>111 Tarawood Ln NE, Calgary, AB T3J 0B9</p>
+          <p className={styles.text_no_margin}>1461 Rue Dufresne, Montréal, QC H2K 3J4</p>
+          <p className={styles.title}>Phones</p>
+          <p className={styles.text_no_margin}>514 968 7856</p>
+          <p className={styles.text_no_margin}>438 530 3613</p>
         </div>
 
         <div className="social-media-container" style={socialMediaStyle}>
-          <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
+          {/* <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
             <FontAwesomeIcon icon={faDiscord} style={iconStyle}/>
-          </button>
-          <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
+          </button> */}
+          <button style={buttonStyle} onClick={() => window.open('https://www.instagram.com/airborne.canada/')}>
             <FontAwesomeIcon icon={faInstagram} style={iconStyle}/>
           </button>
-          <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
+          {/* <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
             <FontAwesomeIcon icon={faYoutube} style={iconStyle}/>
-          </button>
+          </button> */}
           <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
             <FontAwesomeIcon icon={faLinkedin} style={iconStyle}/>
           </button>
-          <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
+          {/* <button style={buttonStyle} onClick={() => window.open('YOUR_DISCORD_LINK')}>
             <FontAwesomeIcon icon={faTwitter} style={iconStyle}/>
-          </button>
+          </button> */}
         </div>
             
         </>

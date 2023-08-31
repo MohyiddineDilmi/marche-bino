@@ -4,11 +4,25 @@
 
 .text-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
 }
 
 .text-item {
-    width: 30%;
+    padding: 0.5rem;
+}
+
+.contact-container {
+    padding: 1rem;
+}
+
+/* Media query for phones */
+@media (max-width: 767px) {
+
+    .text-container {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        padding: 1rem;
+    }
+
 }

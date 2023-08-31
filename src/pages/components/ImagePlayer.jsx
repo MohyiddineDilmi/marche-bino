@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import styles from '../../modules/styles.module.css'
 
 const ImagePlayer = ({ images, duration }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -81,8 +82,8 @@ const ImagePlayer = ({ images, duration }) => {
     <div
       style={{
         borderRadius: '10%',
-        width: '600px',
-        height: '600px',
+        width: '100%',
+        height: '100%',
         overflow: 'hidden',
         position: 'relative',
       }}
@@ -92,7 +93,8 @@ const ImagePlayer = ({ images, duration }) => {
         ref={imageRef}
         style={{
           objectFit: 'cover',
-          position: 'absolute',
+          // position: 'absolute',
+          borderRadius: '10%',
           top: '0',
           left: '0',
           width: '100%',
@@ -103,6 +105,10 @@ const ImagePlayer = ({ images, duration }) => {
         }}
         alt="Slideshow"
       />
+      <div className='textContainer'>
+              <h1 className={styles.title_primary_white}>Aerial Photography</h1>
+              <p className={styles.text_dark_mode}>Airborne provides high-quality aerial photography services for a variety of purposes, including real estate, marketing, and events. The company's drones are equipped with high-resolution cameras that can capture stunning images from unique angles and perspectives.</p>
+      </div>
     </div>
   );
 };

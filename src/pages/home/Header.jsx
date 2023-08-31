@@ -8,9 +8,7 @@ const description = 'Airborne offers top-quality drone services, specializing in
 const TEXTS = ['creation', 'innovation', 'safety', 'excellence'];
 
 function Header () {
-
     const [index, setIndex] = React.useState(0);
-
 
     React.useEffect(() => {
         const intervalId = setInterval(
@@ -21,13 +19,14 @@ function Header () {
     }, []);
 
     return (
-        <header className="header-container ">
+        <header className="header-container">
             <div className="animated-text">
-                <h1 className={styles.title_primary_simple}>{slogan}
-                    <TextTransition style={{ margin: "0 4px"}} inline>{TEXTS[index % TEXTS.length]}</TextTransition>
+                <h1 className={`${styles.title_primary_simple} responsive-title`}>
+                    {slogan}
+                    <TextTransition style={{ margin: "0 4px" }} inline>{TEXTS[index % TEXTS.length]}</TextTransition>
                 </h1>
             </div>
-            <p className={styles.text}>{description}</p>           
+            <p className={`${styles.text} responsive-description`}>{description}</p>
         </header>
     );
 }

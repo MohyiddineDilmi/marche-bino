@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
+import styles from '../../modules/styles.module.css'
+
 
 const VideoPlayer = ({ videoUrls }) => {
+  
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef();
 
@@ -53,23 +56,25 @@ const VideoPlayer = ({ videoUrls }) => {
   }
 
   return (
+
     <div
       style={{
         borderRadius: "10%",
-        width: "600px",
-        height: "600px",
+        width: "100%",
+        height: "100%",
         overflow: "hidden",
         position: "relative",
       }}
     >
-      <video
+   
+    <video
         src={videoUrls[currentVideoIndex]}
         onEnded={handleVideoEnd}
         onTimeUpdate={handleTimeUpdate} // Added timeupdate event listener
         ref={videoRef}
         style={{
           objectFit: "cover",
-          position: "absolute",
+          // position: "absolute",
           top: "0",
           left: "0",
           width: "100%",
@@ -78,7 +83,12 @@ const VideoPlayer = ({ videoUrls }) => {
         muted
         autoPlay
       />
+      <div className='textContainer'>
+          <h1 className={styles.title_primary_white}>Cinematography and Videography</h1>
+          <p className={styles.text_dark_mode}>Airborne provides top-quality aerial cinematography and videography services for film, TV, marketing, and online content. We capture stunning footage and deliver a polished final product to meet your needs.</p>
+      </div>  
     </div>
+
   );
 };
 

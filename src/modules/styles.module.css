@@ -74,3 +74,33 @@
     display: flex;
     justify-content: center;
 }
+
+
+/* Media query for phones */
+@media (max-width: 767px) {
+    .title_primary_white :local {
+        font-size: 28px;
+        margin: 0% 10% 0% 0%;
+    }
+ 
+    .text_dark_mode :local {
+        font-size: 11px;
+        margin: 0% 10% 0% 0%;
+    }
+
+    .title_primary_simple :local {
+        font-size: 48px;
+        margin: 0% 5% 0% 5%;
+    }
+
+    .text :local {
+        font-size: 16px;
+        margin: 5%;
+    }
+
+    .title_primary :local {
+        font-size: 48px;
+        margin: 0% 0% 0% 0%;
+    }
+
+  }
