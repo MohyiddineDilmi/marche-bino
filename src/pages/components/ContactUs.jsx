@@ -33,7 +33,7 @@ function ContactUs () {
     const [logo, setLogo] = useState(faClone);
 
     const handleButtonClick = () => {
-        const textToCopy = 'fly@airborne.ca';
+        const textToCopy = 'fly@airbornecanada.com';
     
         navigator.clipboard.writeText(textToCopy)
           .then(() => {
