@@ -15,22 +15,22 @@ const technologies = [
         description: 'We can capture stunning aerial footage that will help you showcase your business or project.',
     },
     {
-        iconPath: `${IconAi}`,
+        iconPath: `${IconDrone}`,
         title: 'high-speed',
         description: 'high-speed drone technology, which can capture footage at high speeds for action shots, sports events, and more.',
     },
     {
-        iconPath: `${IconDrone}`,
+        iconPath: `${IconStream}`,
         title: 'Real-time streaming',
         description: 'you can join our flights and see the footages in real-time.',
     },
     {
-        iconPath: `${IconStream}`,
+        iconPath: `${IconFpv}`,
         title: 'FPV',
         description: 'FPV technology allows for precise and immersive control of the drone.',
     },
     {
-        iconPath: `${IconFpv}`,
+        iconPath: `${IconAi}`,
         title: 'AI and machine learning',
         description: 'AI and machine learning algorithms for image and data analysis.',
     },

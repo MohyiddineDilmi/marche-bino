@@ -24,7 +24,7 @@ export default function Footer () {
     return (
         <>
         <div className="footer-container">
-            <img src={logoPath} alt="air-borne-logo" style={{ width: '200px', paddingLeft: '1rem'}} />
+            <img src={logoPath} alt="air-borne-logo" style={{ width: '200px', padding: '1rem'}} />
             <div className="text-container">
                 {footer_data.map((data, index) => (
                     <div className="text-item" key={index}>

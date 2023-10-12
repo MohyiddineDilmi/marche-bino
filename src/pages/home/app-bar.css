@@ -1,9 +1,11 @@
+/* app-bar.css */
+
 .app-bar-container {
     display: flex;
     flex-direction: row;
-    align-items: center; /* center items vertically */
+    align-items: center;
     justify-content: space-between;
-    padding: 2% 10% 2% 10%;;
+    padding: 2% 10% 2% 10%;
 }
 
 .link {
@@ -12,4 +14,23 @@
 
 .logo img {
     height: 3rem;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .app-bar-container {
+        flex-direction: column;
+        padding: 2% 5%;
+    }
+
+    .link {
+        margin: 1rem 0;
+        margin-right: 0;
+        padding: 0.2rem;
+    }
+
+    .logo img {
+        padding: 1rem;
+    }
 }
