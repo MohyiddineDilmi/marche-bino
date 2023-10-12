@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from '../../modules/styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClone, faCheck } from '@fortawesome/free-solid-svg-icons';
-import { faDiscord, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 function ContactUs () {
