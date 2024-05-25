@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from '../../modules/styles.module.css'
 
 
-const ImagePlayer = ({ images, duration }) => {
+const ImagePlayer = ({ title, description, images, duration }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imageRef = useRef();
   const observerRef = useRef();
@@ -107,8 +107,8 @@ const ImagePlayer = ({ images, duration }) => {
         alt="Slideshow"
       />
       <div className='textContainer'>
-              <h1 className={styles.title_primary_white}>Aerial Photography</h1>
-              <p className={styles.text_dark_mode}>Airborne provides high-quality aerial photography services for a variety of purposes, including real estate, marketing, and events. The company's drones are equipped with high-resolution cameras that can capture stunning images from unique angles and perspectives.</p>
+              <h1 className={styles.title_primary_white}>{title}</h1>
+              <p className={styles.text_dark_mode}>{description}</p>
       </div>
     </div>
   );

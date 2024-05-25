@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from '../../modules/styles.module.css'
 
 
-const VideoPlayer = ({ videoUrls }) => {
+const VideoPlayer = ({ title, description, videoUrls }) => {
   
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef();
@@ -84,8 +84,8 @@ const VideoPlayer = ({ videoUrls }) => {
         autoPlay
       />
       <div className='textContainer'>
-          <h1 className={styles.title_primary_white}>Cinematography and Videography</h1>
-          <p className={styles.text_dark_mode}>Airborne provides top-quality aerial cinematography and videography services for film, TV, marketing, and online content. We capture stunning footage and deliver a polished final product to meet your needs.</p>
+          <h1 className={styles.title_primary_white}>{title}</h1>
+          <p className={styles.text_dark_mode}>{description}</p>
       </div>  
     </div>
 

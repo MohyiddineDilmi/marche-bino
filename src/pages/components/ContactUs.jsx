@@ -59,8 +59,8 @@ function ContactUs () {
               <FontAwesomeIcon icon={logo} style={iconStyle}/>
           </button>
           <p className={styles.title}>Address</p>
-          <p className={styles.text_no_margin}>111 Tarawood Ln NE, Calgary, AB T3J 0B9</p>
-          <p className={styles.text_no_margin}>1461 Rue Dufresne, Montréal, QC H2K 3J4</p>
+          <p className={styles.text_no_margin}>Calgary, AB T3J 0B9</p>
+          <p className={styles.text_no_margin}>Montréal, QC H2K 3J4</p>
           <p className={styles.title}>Phones</p>
           <p className={styles.text_no_margin}>514 968 7856</p>
           <p className={styles.text_no_margin}>438 530 3613</p>

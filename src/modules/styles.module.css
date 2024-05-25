@@ -56,6 +56,14 @@
     text-align: center;
 }
 
+.text_white :local {
+    font-size: 20px;
+    color: #ffffff2d;
+    font-family: "NCTTorin-Regular";
+    margin: 0% 15% 0% 15%;
+    text-align: center;
+}
+
 .text_no_margin {
     font-size: 14px;
     color: #909090;
@@ -75,6 +83,18 @@
     justify-content: center;
 }
 
+.button-style {
+    display: inline-block; /* Allow the button to shrink or expand based on content */
+    height: 60px;
+    background: black;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px; /* Add padding to give some space around the text */
+}
 
 /* Media query for phones */
 @media (max-width: 767px) {
