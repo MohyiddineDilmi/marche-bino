@@ -38,7 +38,9 @@ const technologies = [
 
 export default function Technologies () {
     return (
-        <>
+        <div
+            style={{ maxWidth: '1080px', margin: '140px auto', justifyContent: 'center', alignItems: 'center'}}
+        >
             <div className="text-tech-container">
               <h1 className={styles.title_primary}>Our Technologies</h1>
               <p className={styles.text}>With our unwavering focus on high-advanced technologies, we bring a new dimension to capturing stunning visuals from the skies.</p>
@@ -51,6 +53,6 @@ export default function Technologies () {
                 <TechnologyCard  technologies={technologies[3]}/>
                 <TechnologyCard  technologies={technologies[4]}/>
             </div>
-        </>
+        </div>
     )
 }

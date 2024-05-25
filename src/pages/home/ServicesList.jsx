@@ -30,8 +30,10 @@ const videoUrls = [
 
   function ServicesList() {
     return (
-      <>
-          <div className="text-tech-container">
+      <div
+        style={{ maxWidth: '1280px', margin: 'auto', justifyContent: 'center', alignItems: 'center'}}
+      >
+          <div className="text-tech-container" >
               <h1 className={styles.title_primary}>Our Services</h1>
               <p className={styles.text}>We offers top-quality drone services, specializing in Aerial photography, Cinematography and Videography. Quality, safety, and customer satisfaction are our top priorities.</p>
           </div>
@@ -58,7 +60,7 @@ const videoUrls = [
             <VideoPlayer title={"Photogrammetry"} description={"A state-of-the-art technique that harnesses the power of aerial imagery and precision measurements to create detailed 3D models and maps. Our Photogrammetry service empowers industries with accurate data for informed decision-making and innovative solutions."} videoUrls={videoUrls_1} />
           </div>
         </div>
-      </>
+      </div>
     );
   }
   
