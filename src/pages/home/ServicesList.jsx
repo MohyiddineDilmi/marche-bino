@@ -31,7 +31,7 @@ const videoUrls = [
   function ServicesList() {
     return (
       <div
-        style={{ maxWidth: '1280px', margin: 'auto', justifyContent: 'center', alignItems: 'center'}}
+        style={{ maxWidth: '1080px', margin: 'auto', justifyContent: 'center', alignItems: 'center'}}
       >
           <div className="text-tech-container" >
               <h1 className={styles.title_primary}>Our Services</h1>

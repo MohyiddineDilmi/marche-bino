@@ -22,7 +22,9 @@ const footer_data = [
 
 export default function Footer () {
     return (
-        <>
+        <div
+            style={{ maxWidth: '1980px', margin: 'auto', justifyContent: 'center', alignItems: 'center'}}
+        >
         <div className="footer-container">
             <img src={logoPath} alt="air-borne-logo" style={{ width: '200px', padding: '1rem'}} />
             <div className="text-container">
@@ -41,6 +43,6 @@ export default function Footer () {
                     Canada, Privacy Policy. </p>
             </div>
         </div> 
-        </>
+        </div>
     )
 }
