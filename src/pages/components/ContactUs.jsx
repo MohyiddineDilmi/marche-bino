@@ -33,7 +33,7 @@ function ContactUs () {
     const [logo, setLogo] = useState(faClone);
 
     const handleButtonClick = () => {
-        const textToCopy = 'fly@airbornecanada.com';
+        const textToCopy = 'fly@skyframe.ca';
     
         navigator.clipboard.writeText(textToCopy)
           .then(() => {
@@ -54,7 +54,7 @@ function ContactUs () {
     return (
         <>
         <div className="email-conatiner" style={socialMediaStyle}>
-          <p className={styles.title}>fly@airbornecanada.com</p>
+          <p className={styles.title}>fly@skyframe.ca</p>
           <button onClick={handleButtonClick} style={buttonStyle}>
               <FontAwesomeIcon icon={logo} style={iconStyle}/>
           </button>
