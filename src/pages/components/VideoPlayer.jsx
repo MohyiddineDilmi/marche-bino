@@ -1,16 +1,14 @@
-import React, { useState, useRef, useEffect } from "react";
-import styles from '../../modules/styles.module.css'
-
+import React, { useState, useRef, useEffect } from 'react';
+import styles from '../../modules/styles.module.css';
 
 const VideoPlayer = ({ title, description, videoUrls }) => {
-  
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef();
 
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "0px",
+      rootMargin: '0px',
       threshold: 0.5, // play video when it's at least 50% visible
     };
 
@@ -56,39 +54,36 @@ const VideoPlayer = ({ title, description, videoUrls }) => {
   }
 
   return (
-
     <div
       style={{
-        borderRadius: "10%",
-        width: "100%",
-        height: "100%",
-        overflow: "hidden",
-        position: "relative",
+        borderRadius: '10%',
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+        position: 'relative',
       }}
     >
-   
-    <video
+      <video
         src={videoUrls[currentVideoIndex]}
         onEnded={handleVideoEnd}
         onTimeUpdate={handleTimeUpdate} // Added timeupdate event listener
         ref={videoRef}
         style={{
-          objectFit: "cover",
+          objectFit: 'cover',
           // position: "absolute",
-          top: "0",
-          left: "0",
-          width: "100%",
-          height: "100%",
+          top: '0',
+          left: '0',
+          width: '100%',
+          height: '100%',
         }}
         muted
         autoPlay
       />
-      <div className='textContainer'>
-          <h1 className={styles.title_primary_white}>{title}</h1>
-          <p className={styles.text_dark_mode}>{description}</p>
-      </div>  
+      <div className="textContainer">
+        <h1 className={styles.title_primary_white}>{title}</h1>
+        <p className={styles.text_dark_mode}>{description}</p>
+      </div>
     </div>
-
   );
 };
 

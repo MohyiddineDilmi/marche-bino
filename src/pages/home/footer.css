@@ -1,28 +1,26 @@
 .footer-container {
-    padding: 5rem;
+  padding: 5rem;
 }
 
 .text-container {
-    display: flex;
+  display: flex;
 }
 
 .text-item {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .contact-container {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* Media query for phones */
 @media (max-width: 767px) {
+  .text-container {
+    flex-direction: column;
+  }
 
-    .text-container {
-        flex-direction: column;
-    }
-
-    .footer-container {
-        padding: 1rem;
-    }
-
+  .footer-container {
+    padding: 1rem;
+  }
 }

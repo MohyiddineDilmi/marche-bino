@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import styles from '../../modules/styles.module.css'
-
+import React, { useState, useRef, useEffect } from 'react';
+import styles from '../../modules/styles.module.css';
 
 const ImagePlayer = ({ title, description, images, duration }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -11,7 +10,7 @@ const ImagePlayer = ({ title, description, images, duration }) => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "0px",
+      rootMargin: '0px',
       threshold: 0.5, // show image when it's at least 50% visible
     };
 
@@ -50,34 +49,36 @@ const ImagePlayer = ({ title, description, images, duration }) => {
         setCurrentImageIndex(currentImageIndex + 1);
       }
     }, duration * 1000);
-  
+
     return () => {
       clearInterval(intervalRef.current);
     };
   }, [images, currentImageIndex, duration]);
-  
+
   useEffect(() => {
     const transitionDuration = 500; // Transition duration in milliseconds
-  
+
     // Schedule the transition just before the image duration ends
-    const transitionTimeout = setTimeout(() => {
-      imageRef.current.style.opacity = 0;
-      imageRef.current.style.transform = 'scale(0.98)';
-      setTimeout(() => {
-        if (currentImageIndex < images.length - 1) {
-          setCurrentImageIndex(currentImageIndex + 1);
-        } else {
-          setCurrentImageIndex(0);
-        }
-      }, transitionDuration);
-    }, (duration - transitionDuration / 200) * 1000);
-  
+    const transitionTimeout = setTimeout(
+      () => {
+        imageRef.current.style.opacity = 0;
+        imageRef.current.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+          if (currentImageIndex < images.length - 1) {
+            setCurrentImageIndex(currentImageIndex + 1);
+          } else {
+            setCurrentImageIndex(0);
+          }
+        }, transitionDuration);
+      },
+      (duration - transitionDuration / 200) * 1000
+    );
+
     return () => {
       clearTimeout(transitionTimeout);
       clearInterval(intervalRef.current);
     };
   }, [currentImageIndex, duration, images]);
-  
 
   return (
     <div
@@ -106,9 +107,9 @@ const ImagePlayer = ({ title, description, images, duration }) => {
         }}
         alt="Slideshow"
       />
-      <div className='textContainer'>
-              <h1 className={styles.title_primary_white}>{title}</h1>
-              <p className={styles.text_dark_mode}>{description}</p>
+      <div className="textContainer">
+        <h1 className={styles.title_primary_white}>{title}</h1>
+        <p className={styles.text_dark_mode}>{description}</p>
       </div>
     </div>
   );
