@@ -1,7 +1,7 @@
 import React from 'react';
 import './app-bar.css'
 import { Link } from 'react-router-dom';
-import logoPath from '../../assets/air-borne-logo-white.svg';
+import logoPath from '../../assets/erelys_logo.svg';
 import styles from '../../modules/styles.module.css'
 
 const sections = ['About Us', 'Technologies', 'Services', 'Contact Us'];
