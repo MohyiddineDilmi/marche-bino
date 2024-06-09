@@ -50,9 +50,9 @@ function ServicesList() {
       <div className="services_list">
         <div className="srvice-card">
           <VideoPlayer
-            title={'Cinematography and Videography'}
+            title={'Visual Arts'}
             description={
-              'Airborne provides top-quality aerial cinematography and videography services for film, TV, marketing, and online content. We capture stunning footage and deliver a polished final product to meet your needs.'
+              'Providing high-quality cinematography, videography, and aerial photography for events, real estate marketing, and creative projects.'
             }
             videoUrls={videoUrls}
           />
@@ -60,9 +60,9 @@ function ServicesList() {
 
         <div className="srvice-card">
           <ImagePlayer
-            title={'Aerial Photography'}
+            title={'Inspection and Surveying'}
             description={
-              "Airborne provides high-quality aerial photography services for a variety of purposes, including real estate, marketing, and events. The company's drones are equipped with high-resolution cameras that can capture stunning images from unique angles and perspectives."
+              "Conducting comprehensive inspections and surveys for construction, infrastructure, agriculture, and environmental monitoring, with detailed reports and measurements."
             }
             images={imgUrls}
             duration={5}
@@ -74,9 +74,9 @@ function ServicesList() {
       <div className="services_list">
         <div className="srvice-card">
           <ImagePlayer
-            title={'Thermography'}
+            title={'Thermal and Infrared Imaging'}
             description={
-              'Employing advanced thermal imaging technology to provide comprehensive solutions for diverse industries. Our Thermography service offers a vital perspective, revealing hidden details and enabling informed decisions based on temperature variations and heat patterns.'
+              'Utilizing advanced thermography for heat detection, electrical inspections, fire support, and wildlife monitoring to ensure safety and efficiency.'
             }
             images={[imgSrc0, imgSrc1, imgSrc2, imgSrc5]}
             duration={5}
@@ -85,9 +85,9 @@ function ServicesList() {
 
         <div className="srvice-card">
           <VideoPlayer
-            title={'Photogrammetry'}
+            title={'Mapping and Measurement'}
             description={
-              'A state-of-the-art technique that harnesses the power of aerial imagery and precision measurements to create detailed 3D models and maps. Our Photogrammetry service empowers industries with accurate data for informed decision-making and innovative solutions.'
+              'Delivering precise photogrammetry, land surveys, urban planning, and measurement services for accurate 3D modeling, mapping, and development projects.'
             }
             videoUrls={videoUrls_1}
           />
