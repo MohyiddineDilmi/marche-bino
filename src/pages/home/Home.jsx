@@ -16,7 +16,8 @@ import {
 import { useRef, useEffect } from 'react';
 
 const vBg =
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/full_bg.mp4';
+  // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/full_bg.mp4';
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/bg_v_1.2.mp4';
 
 function Home() {
 
