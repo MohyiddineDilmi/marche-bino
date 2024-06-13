@@ -4,9 +4,9 @@ import logoPath from '../../assets/erelys_logo.svg';
 
 const styles = {
   appBarContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
+    // display: 'flex',
+    // flexDirection: 'row',
+    // alignItems: 'center',
     justifyContent: 'space-between',
     padding: '2% 10% 2% 10%',
     maxWidth: '1080px',
@@ -21,7 +21,7 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',  // Center the items horizontally
         justifyContent: 'center',  // Center the items vertically
-        padding: '5% 5%',
+        padding: '2rem 5%',
       },
       logoImg: {
         padding: '1rem',

@@ -14,6 +14,8 @@ import {
   animate,
 } from 'framer-motion';
 import { useRef, useEffect } from 'react';
+import SEO from '../components/SEO';
+import { erelysLogo } from '../../assets/erelys_logo.svg';
 
 const vBg =
   // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/full_bg.mp4';
@@ -41,11 +43,19 @@ function Home() {
           backgroundColor: 'black',
         }}
       >
+        <SEO
+          title="Erelys Drone Services - Home"
+          description="Discover Erelys Drone Services for Cinematography, Videography, Aerial Photography, Thermography, Photogrammetry, and Construction Inspections."
+          url="https://www.erelys.com/"
+          image="https://raw.githubusercontent.com/MohyiddineDilmi/data/main/images/home_image.png"
+        />
         <motion.div
           style={{
             background: backgroundImage,
             minHeight: '100vh',
             width: '100%',
+            position: 'relative',
+            zIndex: 1
           }}
         >
           <div className="container">
