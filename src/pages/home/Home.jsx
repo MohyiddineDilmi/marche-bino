@@ -20,13 +20,7 @@ const vBg =
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/bg_v_1.2.mp4';
 
 function Home() {
-
-  const COLORS = [
-    '#AD00FF',
-    '#00FFD1',
-    '#00D1FF',
-    '#FF6F07',
-  ];
+  const COLORS = ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'];
 
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(200% 150% at 0% 10%, #000000 50%, ${color})`;

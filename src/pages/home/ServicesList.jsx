@@ -62,7 +62,7 @@ function ServicesList() {
           <ImagePlayer
             title={'Inspection and Surveying'}
             description={
-              "Conducting comprehensive inspections and surveys for construction, infrastructure, agriculture, and environmental monitoring, with detailed reports and measurements."
+              'Conducting comprehensive inspections and surveys for construction, infrastructure, agriculture, and environmental monitoring, with detailed reports and measurements.'
             }
             images={imgUrls}
             duration={5}
