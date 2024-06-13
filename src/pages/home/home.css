@@ -17,9 +17,9 @@
 }
 
 .videoStyle {
+  height: 50vh; /* Adjust the height as needed */
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  object-fit: cover; /* Ensure the video covers the container */
 }
 
 /* Define styles for phones using media query */

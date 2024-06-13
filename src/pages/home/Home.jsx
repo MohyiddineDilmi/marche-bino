@@ -19,7 +19,7 @@ import { erelysLogo } from '../../assets/erelys_logo.svg';
 
 const vBg =
   // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/full_bg.mp4';
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/bg_v_1.3.mp4';
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/bg_v_1.4.mp4';
 
 function Home() {
   const COLORS = ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'];
