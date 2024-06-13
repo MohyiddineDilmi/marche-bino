@@ -18,7 +18,7 @@ const technologies = [
   },
   {
     iconPath: `${IconDrone}`,
-    title: 'high-speed',
+    title: 'High-speed',
     description:
       'high-speed drone technology, which can capture footage at high speeds for action shots, sports events, and more.',
   },

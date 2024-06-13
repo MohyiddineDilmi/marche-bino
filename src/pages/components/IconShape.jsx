@@ -3,7 +3,7 @@ import styles from '../../modules/styles.module.css';
 
 const IconShape = ({ color, title, myIcon, description }) => {
   return (
-    <div style={{ maxWidth: '1140px', margin: '60px auto' }}>
+    <div style={{ maxWidth: '1140px', margin: '40px auto' }}>
       {' '}
       {/* Container with max-width */}
       <div style={{ position: 'relative', display: 'flex' }}>
@@ -41,8 +41,8 @@ const IconShape = ({ color, title, myIcon, description }) => {
             alt="Custom Icon"
             style={{
               position: 'absolute',
-              width: '36px',
-              height: '36px',
+              width: '42px',
+              height: '42px',
               fill: color,
             }}
           />
@@ -51,7 +51,7 @@ const IconShape = ({ color, title, myIcon, description }) => {
           style={{
             color: 'white',
             transform: 'translateY(0%)',
-            marginLeft: '20px',
+            marginLeft: '30px',
             width: '12rem',
           }}
         >

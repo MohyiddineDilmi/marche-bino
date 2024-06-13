@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../../modules/styles.module.css';
 import { TypeAnimation } from 'react-type-animation';
+import { height, maxHeight, width } from '@mui/system';
 
 const TEXTS = ['creation', 'innovation', 'safety', 'excellence'];
 
