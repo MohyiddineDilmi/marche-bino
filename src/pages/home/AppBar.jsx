@@ -19,12 +19,9 @@ const styles = {
     '@media screen and (max-width: 768px)': {
       appBarContainer: {
         flexDirection: 'column',
-        padding: '2% 5%',
-      },
-      link: {
-        margin: '1rem 0',
-        marginRight: '0',
-        padding: '0.2rem',
+        alignItems: 'center',  // Center the items horizontally
+        justifyContent: 'center',  // Center the items vertically
+        padding: '5% 5%',
       },
       logoImg: {
         padding: '1rem',
@@ -37,8 +34,8 @@ const sections = ['About Us', 'Technologies', 'Services', 'Contact Us'];
 
 function AppBar() {
   return (
-    <nav style={styles.appBarContainer}>
-      <div className={styles.logo}>
+    <nav style={{ ...styles.appBarContainer, ...styles.responsive['@media screen and (max-width: 768px)'].appBarContainer }}>
+      <div>
         <Link to="/">
           <img src={logoPath} alt="air-borne-logo" style={styles.logoImg} />
         </Link>
