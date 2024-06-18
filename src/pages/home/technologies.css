@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5rem;
+  padding: 0rem 5rem 0rem 5rem;
 }
 
 /* Responsive styles for smaller screens */

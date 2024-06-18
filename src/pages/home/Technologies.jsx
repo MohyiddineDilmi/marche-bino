@@ -46,7 +46,7 @@ export default function Technologies() {
     <div
       style={{
         maxWidth: '1080px',
-        margin: '140px auto',
+        margin: '120px auto',
         justifyContent: 'center',
         alignItems: 'center',
       }}
@@ -60,36 +60,11 @@ export default function Technologies() {
       </div>
 
       <div className="techs-conatiner">
-        <IconShape
-          color="#00FFD1"
-          title={technologies[0].title}
-          myIcon={technologies[0].iconPath}
-          description={technologies[0].description}
-        />
-        <IconShape
-          color="#FF6F07"
-          title={technologies[1].title}
-          myIcon={technologies[1].iconPath}
-          description={technologies[1].description}
-        />
-        <IconShape
-          color="#00D1FF"
-          title={technologies[2].title}
-          myIcon={technologies[2].iconPath}
-          description={technologies[2].description}
-        />
-        <IconShape
-          color="#18FF04"
-          title={technologies[3].title}
-          myIcon={technologies[3].iconPath}
-          description={technologies[3].description}
-        />
-        <IconShape
-          color="#AD00FF"
-          title={technologies[4].title}
-          myIcon={technologies[4].iconPath}
-          description={technologies[4].description}
-        />
+        <IconShape color="#FF6F07" title={technologies[0].title} myIcon={technologies[0].iconPath} description={technologies[0].description} />
+        {/* <IconShape color="#FF6F07" title={technologies[1].title} myIcon={technologies[1].iconPath} description={technologies[1].description}/> */}
+        <IconShape color="#00D1FF" title={technologies[2].title} myIcon={technologies[2].iconPath} description={technologies[2].description}/>
+        <IconShape color="#18FF04" title={technologies[3].title} myIcon={technologies[3].iconPath} description={technologies[3].description}/>
+        <IconShape color="#AD00FF" title={technologies[4].title} myIcon={technologies[4].iconPath} description={technologies[4].description}/>
         {/* <TechnologyCard technologies={technologies[0]} />
         <TechnologyCard technologies={technologies[1]} />
         <TechnologyCard technologies={technologies[2]} />
