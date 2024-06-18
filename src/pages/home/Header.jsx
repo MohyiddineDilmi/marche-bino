@@ -24,6 +24,7 @@ const headerStyles = {
 };
 
 function Header() {
+
   return (
     <header style={headerStyles.container}>
       <div style={headerStyles.animatedText}>

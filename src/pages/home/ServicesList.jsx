@@ -8,6 +8,7 @@ import imgSrc3 from '../../assets/i-4.png';
 import imgSrc5 from '../../assets/i-6.jpg';
 import ImagePlayer from '../components/ImagePlayer';
 import VideoPlayer from '../components/VideoPlayer';
+import { useTranslation } from 'react-i18next';
 
 const videoUrls = [
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/v-7_resized.mp4',
@@ -29,6 +30,13 @@ const imgUrls = [
 ];
 
 function ServicesList() {
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div
       style={{
@@ -39,7 +47,7 @@ function ServicesList() {
       }}
     >
       <div className="text-tech-container">
-        <h1 className={styles.title_primary}>Our Services</h1>
+        <h1 className={styles.title_primary}>{t('our_servcices')}</h1>
         <p className={styles.text}>
           We offers top-quality drone services, specializing in Aerial
           photography, Cinematography and Videography. Quality, safety, and

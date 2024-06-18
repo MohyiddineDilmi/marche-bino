@@ -55,18 +55,12 @@ function Home() {
             minHeight: '100vh',
             width: '100%',
             position: 'relative',
-            zIndex: 1
+            zIndex: 1,
           }}
         >
           <div className="container">
             <div className="overlayStyle"></div>
-            <video 
-              className="videoStyle" 
-              src={vBg} 
-              autoPlay 
-              loop 
-              muted
-            />
+            <video className="videoStyle" src={vBg} autoPlay loop muted />
             <div
               className="header-content"
               style={{
