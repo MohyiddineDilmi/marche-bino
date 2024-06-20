@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../modules/styles.module.css';
 import { TypeAnimation } from 'react-type-animation';
-import { height, maxHeight, width } from '@mui/system';
-
-const TEXTS = ['creation', 'innovation', 'safety', 'excellence'];
+import { useTranslation } from 'react-i18next';
 
 const headerStyles = {
   container: {
@@ -24,20 +22,40 @@ const headerStyles = {
 };
 
 function Header() {
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setLanguage(lng); // Update state to re-render the animation
+  };
+
+  useEffect(() => {
+    const handleLanguageChange = () => {
+      setLanguage(i18n.language);
+    };
+
+    i18n.on('languageChanged', handleLanguageChange);
+
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
 
   return (
     <header style={headerStyles.container}>
       <div style={headerStyles.animatedText}>
         <h1 className={`${styles.title_primary_simple} responsive-title`}>
           <TypeAnimation
+            key={language} // Force re-render on language change
             sequence={[
-              'Taking your vision to new heights with creation',
+              t('header_title_one'),
               1000,
-              'Taking your vision to new heights with innovation',
+              t('header_title_two'),
               1000,
-              'Taking your vision to new heights with safety',
+              t('header_title_three'),
               1000,
-              'Taking your vision to new heights with excellence',
+              t('header_title_four'),
               1000,
             ]}
             speed={50}
@@ -46,7 +64,7 @@ function Header() {
               textAlign: 'center',
               color: '#b78143',
               backgroundImage:
-                '-webkit-linear-gradient(45deg, #b78143 0%, #e3e9a5 50%, #c1e0ad 100%, #2196f3 50%)',
+                '-webkit-linear-gradient(45deg, #FFFFFF 70%, #fbda61 80%, #ff5acd 100%, #FF6F07 50%)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               textFillColor: 'transparent',

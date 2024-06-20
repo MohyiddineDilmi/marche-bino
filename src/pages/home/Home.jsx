@@ -2,7 +2,7 @@ import React from 'react';
 import AppBar from './AppBar';
 import Header from './Header';
 import './home.css';
-import ServicesList from './ServicesList';
+import Services from './Services';
 import Footer from './Footer';
 import Technologies from './Technologies';
 import {
@@ -44,7 +44,7 @@ function Home() {
         }}
       >
         <SEO
-          title="Erelys Drone Services - Home"
+          title="Erelys Drone Services"
           description="Discover Erelys Drone Services for Cinematography, Videography, Aerial Photography, Thermography, Photogrammetry, and Construction Inspections."
           url="https://www.erelys.com/"
           image="https://raw.githubusercontent.com/MohyiddineDilmi/data/main/images/home_image.png"
@@ -74,7 +74,7 @@ function Home() {
               <Header />
             </div>
           </div>
-          <ServicesList />
+          <Services />
           <Technologies />
           <Footer />
         </motion.div>

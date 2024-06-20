@@ -1,4 +1,9 @@
 {
-  "our_servcices": "Our Services",
-  "description": "This is an example of how to use react-i18next"
+  "header_title_one": "Taking your vision to new heights with creation",
+  "header_title_two": "Taking your vision to new heights with innovation",
+  "header_title_three": "Taking your vision to new heights with safety",
+  "header_title_four": "Taking your vision to new heights with excellence",
+
+  "our_services": "Our Services",
+  "our_services_description": "We offers top-quality drone services, specializing in Aerial photography, Cinematography and Videography. Quality, safety, and customer satisfaction are our top priorities."
 }

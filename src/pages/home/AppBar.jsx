@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logoPath from '../../assets/erelys_logo.svg';
-import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 const styles = {
   appBarContainer: {
-    // display: 'flex',
-    // flexDirection: 'row',
-    // alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '2% 10% 2% 10%',
     maxWidth: '1080px',
     margin: '0 auto',
   },
@@ -19,9 +18,9 @@ const styles = {
   responsive: {
     '@media screen and (max-width: 768px)': {
       appBarContainer: {
-        flexDirection: 'column',
+        display: 'flex',
+        flexDirection: 'row',
         alignItems: 'center', // Center the items horizontally
-        justifyContent: 'center', // Center the items vertically
         padding: '2rem 5%',
       },
       logoImg: {
@@ -34,12 +33,6 @@ const styles = {
 const sections = ['About Us', 'Technologies', 'Services', 'Contact Us'];
 
 function AppBar() {
-  
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
 
   return (
     <nav
@@ -53,8 +46,10 @@ function AppBar() {
         <Link to="/">
           <img src={logoPath} alt="air-borne-logo" style={styles.logoImg} />
         </Link>
-        <button onClick={() => changeLanguage('en')}>English</button>
-        <button onClick={() => changeLanguage('fr')}>Français</button>
+      </div>
+      <div>
+        <LanguageSwitcher/>
+
       </div>
     </nav>
   );

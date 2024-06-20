@@ -29,8 +29,7 @@ const imgUrls = [
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/images/__i_2.png',
 ];
 
-function ServicesList() {
-
+function Services() {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
@@ -47,12 +46,8 @@ function ServicesList() {
       }}
     >
       <div className="text-tech-container">
-        <h1 className={styles.title_primary}>{t('our_servcices')}</h1>
-        <p className={styles.text}>
-          We offers top-quality drone services, specializing in Aerial
-          photography, Cinematography and Videography. Quality, safety, and
-          customer satisfaction are our top priorities.
-        </p>
+        <h1 className={styles.title_primary}>{t('our_services')}</h1>
+        <p className={styles.text}>{t('our_services_description')}</p>
       </div>
       {/* <VideoPlayer videoUrls={videoUrls} /> */}
       <div className="services_list">
@@ -105,4 +100,4 @@ function ServicesList() {
   );
 }
 
-export default ServicesList;
+export default Services;
