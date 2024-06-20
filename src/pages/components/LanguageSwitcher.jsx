@@ -14,6 +14,22 @@ const LanguageSwitcher = () => {
     setLanguage((prevLanguage) => (prevLanguage === 'EN' ? 'FR' : 'EN'));
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (
+        (event.altKey && event.shiftKey) || // Windows: Alt + Shift
+        (event.metaKey && event.shiftKey)   // Mac: Command + Shift
+      ) {
+        toggleLanguage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   const languageIcons = {
     EN: 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/icons/canada_flag.svg',
     FR: 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/icons/quebec_flag.svg',
