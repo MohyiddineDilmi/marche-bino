@@ -6,6 +6,7 @@ import { faClone, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function ContactUs() {
+  
   const buttonStyle = {
     borderRadius: '50%',
     width: '40px',
@@ -57,10 +58,7 @@ function ContactUs() {
         <button onClick={handleButtonClick} style={buttonStyle}>
           <FontAwesomeIcon icon={logo} style={iconStyle} />
         </button>
-        <p className={styles.title}>Address</p>
-        <p className={styles.text_no_margin}>Montréal, QC H2K 3J4</p>
-        <p className={styles.title}>Phone</p>
-        <p className={styles.text_no_margin}>438 530 3613</p>
+        <p className={styles.text_no_margin}>Montreal, QC</p>
       </div>
 
       <div className="social-media-container" style={socialMediaStyle}>

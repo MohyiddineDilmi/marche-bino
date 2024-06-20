@@ -3,26 +3,33 @@ import './footer.css';
 import logoPath from '../../assets/erelys_logo.svg';
 import styles from '../../modules/styles.module.css';
 import ContactUs from '../components/ContactUs';
+import { useTranslation } from 'react-i18next';
 
-const footer_data = [
-  {
-    title: 'Vision',
-    description:
-      "Erelys's vision is to transform the way people see and experience the world. By using the latest technology and innovative techniques, the company aims to capture breathtaking aerial imagery that inspires and informs. Erelys's ultimate goal is to help clients achieve their vision, whether it's by creating stunning marketing content, conducting detailed surveys and inspections, or providing actionable data insights.",
-  },
-  {
-    title: 'Mission',
-    description:
-      "Erelys's mission is to provide safe, efficient, and high-quality drone services that exceed client expectations. The company is committed to delivering innovative solutions that are tailored to each client's unique needs. Erelys strives to maintain the highest standards of safety and regulatory compliance in all aspects of its operations. Above all, Erelys is dedicated to providing exceptional customer service and building lasting relationships with its clients.",
-  },
-  {
-    title: 'Values',
-    description:
-      'Innovation - Erelys is committed to staying at the forefront of the drone services industry by using the latest technology and innovative techniques to provide clients with the best possible solutions. Safety - Safety is a top priority for Erelys, and the company takes all necessary precautions to ensure that its operations are conducted safely and in compliance with all regulatory requirements. Quality - Erylys is dedicated to delivering high-quality drone services that exceed client expectations. The company has a team of skilled professionals who take pride in their work and strive to produce the best possible results. Customer service - Erelys places a strong emphasis on providing exceptional customer service. The company is responsive to client needs and works closely with them to understand their goals and objectives. Integrity - Erylys operates with integrity and transparency in all aspects of its business. The company values honesty, fairness, and ethical conduct, and seeks to build trust and credibility with its clients and partners.',
-  },
-];
+
 
 export default function Footer() {
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const footer_data = [
+    {
+      title: t('vision'),
+      description: t('vision_description'),
+    },
+    {
+      title: t('mission'),
+      description: t('mission_description'),
+    },
+    {
+      title: t('values'),
+      description: t('values_description')
+    },
+  ];
+
   return (
     <div
       style={{
@@ -48,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="contact-container">
-          <h2 className={styles.title_white}> Contact Us </h2>
+          <h2 className={styles.title_white}>{t('contact_us')}</h2>
           <ContactUs />
           <p className={styles.text_no_margin}>
             © 2023 Erelys. All rights reserved.

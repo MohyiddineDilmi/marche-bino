@@ -53,20 +53,16 @@ function Services() {
       <div className="services_list">
         <div className="srvice-card">
           <VideoPlayer
-            title={'Visual Arts'}
-            description={
-              'Providing high-quality cinematography, videography, and aerial photography for events, real estate marketing, and creative projects.'
-            }
+            title={t('visual_arts')}
+            description={t('visual_arts_description')}
             videoUrls={videoUrls}
           />
         </div>
 
         <div className="srvice-card">
           <ImagePlayer
-            title={'Inspection and Surveying'}
-            description={
-              'Conducting comprehensive inspections and surveys for construction, infrastructure, agriculture, and environmental monitoring, with detailed reports and measurements.'
-            }
+            title={t('inspection_and_surveying')}
+            description={t('inspection_and_surveying_description')}
             images={imgUrls}
             duration={5}
           />
@@ -77,10 +73,8 @@ function Services() {
       <div className="services_list">
         <div className="srvice-card">
           <ImagePlayer
-            title={'Thermal and Infrared Imaging'}
-            description={
-              'Utilizing advanced thermography for heat detection, electrical inspections, fire support, and wildlife monitoring to ensure safety and efficiency.'
-            }
+            title={t('thermal_and_infrared_imaging')}
+            description={t('thermal_and_infrared_imaging_description')}
             images={[imgSrc0, imgSrc1, imgSrc2, imgSrc5]}
             duration={5}
           />
@@ -88,10 +82,8 @@ function Services() {
 
         <div className="srvice-card">
           <VideoPlayer
-            title={'Mapping and Measurement'}
-            description={
-              'Delivering precise photogrammetry, land surveys, urban planning, and measurement services for accurate 3D modeling, mapping, and development projects.'
-            }
+            title={t('mapping_and_measurement')}
+            description={t('mapping_and_measurement_description')}
             videoUrls={videoUrls_1}
           />
         </div>

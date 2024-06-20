@@ -8,11 +8,12 @@ import IconAi from '../../assets/icons/ai-icon.svg';
 import IconDrone from '../../assets/icons/drone-icon.svg';
 import IconStream from '../../assets/icons/stream-icon.svg';
 import IconFpv from '../../assets/icons/fpv-icon.svg';
+import { useTranslation } from 'react-i18next';
 
 const technologies = [
   {
     iconPath: `${Icon4k}`,
-    title: 'High-resolution',
+    title: 'high_resolution',
     description:
       'We can capture stunning aerial footage that will help you showcase your business or project.',
   },
@@ -42,6 +43,13 @@ const technologies = [
 ];
 
 export default function Technologies() {
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div
       style={{
@@ -52,38 +60,35 @@ export default function Technologies() {
       }}
     >
       <div className="text-tech-container">
-        <h1 className={styles.title_primary}>Our Technologies</h1>
-        <p className={styles.text}>
-          With our unwavering focus on high-advanced technologies, we bring a
-          new dimension to capturing stunning visuals from the skies.
-        </p>
+        <h1 className={styles.title_primary}>{t('our_technologies')}</h1>
+        <p className={styles.text}>{t('our_technologies_description')}</p>
       </div>
 
       <div className="techs-conatiner">
         <IconShape
           color="#FF6F07"
-          title={technologies[0].title}
+          title={t('high_resolution')}
           myIcon={technologies[0].iconPath}
-          description={technologies[0].description}
+          description={t('high_resolution_description')}
         />
         {/* <IconShape color="#FF6F07" title={technologies[1].title} myIcon={technologies[1].iconPath} description={technologies[1].description}/> */}
         <IconShape
           color="#00D1FF"
-          title={technologies[2].title}
+          title={t('real_time_streaming')}
           myIcon={technologies[2].iconPath}
-          description={technologies[2].description}
+          description={t('real_time_streaming_description')}
         />
         <IconShape
           color="#18FF04"
-          title={technologies[3].title}
+          title={t('fpv')}
           myIcon={technologies[3].iconPath}
-          description={technologies[3].description}
+          description={t('fpv_description')}
         />
         <IconShape
           color="#AD00FF"
-          title={technologies[4].title}
+          title={t('ai_and_machine_learning')}
           myIcon={technologies[4].iconPath}
-          description={technologies[4].description}
+          description={t('ai_and_machine_learning_description')}
         />
         {/* <TechnologyCard technologies={technologies[0]} />
         <TechnologyCard technologies={technologies[1]} />
