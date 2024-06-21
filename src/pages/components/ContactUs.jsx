@@ -6,7 +6,6 @@ import { faClone, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function ContactUs() {
-  
   const buttonStyle = {
     borderRadius: '50%',
     width: '40px',

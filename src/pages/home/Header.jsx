@@ -25,11 +25,6 @@ function Header() {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    setLanguage(lng); // Update state to re-render the animation
-  };
-
   useEffect(() => {
     const handleLanguageChange = () => {
       setLanguage(i18n.language);

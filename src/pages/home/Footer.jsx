@@ -5,15 +5,8 @@ import styles from '../../modules/styles.module.css';
 import ContactUs from '../components/ContactUs';
 import { useTranslation } from 'react-i18next';
 
-
-
 export default function Footer() {
-
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  const { t } = useTranslation();
 
   const footer_data = [
     {
@@ -26,7 +19,7 @@ export default function Footer() {
     },
     {
       title: t('values'),
-      description: t('values_description')
+      description: t('values_description'),
     },
   ];
 
@@ -35,14 +28,12 @@ export default function Footer() {
       style={{
         maxWidth: '1980px',
         margin: 'auto',
-        justifyContent: 'center',
-        alignItems: 'center',
       }}
     >
       <div className="footer-container">
         <img
           src={logoPath}
-          alt="air-borne-logo"
+          alt="erelys-logo"
           style={{ width: '200px', padding: '1rem' }}
         />
         <div className="text-container">
@@ -58,9 +49,9 @@ export default function Footer() {
           <h2 className={styles.title_white}>{t('contact_us')}</h2>
           <ContactUs />
           <p className={styles.text_no_margin}>
-            © 2023 Erelys. All rights reserved.
+            © 2024 Erelys. All rights reserved.
             <br />
-            Canada, Privacy Policy.{' '}
+            Privacy Policy - Terms and Conditions
           </p>
         </div>
       </div>

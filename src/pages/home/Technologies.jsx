@@ -1,7 +1,6 @@
 import React from 'react';
 import './technologies.css';
 import styles from '../../modules/styles.module.css';
-import TechnologyCard from '../components/TechnologyCard';
 import IconShape from '../components/IconShape';
 import Icon4k from '../../assets/icons/4k-icon.svg';
 import IconAi from '../../assets/icons/ai-icon.svg';
@@ -43,12 +42,7 @@ const technologies = [
 ];
 
 export default function Technologies() {
-
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  const { t } = useTranslation();
 
   return (
     <div
@@ -90,11 +84,6 @@ export default function Technologies() {
           myIcon={technologies[4].iconPath}
           description={t('ai_and_machine_learning_description')}
         />
-        {/* <TechnologyCard technologies={technologies[0]} />
-        <TechnologyCard technologies={technologies[1]} />
-        <TechnologyCard technologies={technologies[2]} />
-        <TechnologyCard technologies={technologies[3]} />
-        <TechnologyCard technologies={technologies[4]} /> */}
       </div>
     </div>
   );

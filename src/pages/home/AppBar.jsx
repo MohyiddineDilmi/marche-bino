@@ -30,10 +30,9 @@ const styles = {
   },
 };
 
-const sections = ['About Us', 'Technologies', 'Services', 'Contact Us'];
+// const sections = ['About Us', 'Technologies', 'Services', 'Contact Us'];
 
 function AppBar() {
-
   return (
     <nav
       style={{
@@ -48,8 +47,7 @@ function AppBar() {
         </Link>
       </div>
       <div>
-        <LanguageSwitcher/>
-
+        <LanguageSwitcher />
       </div>
     </nav>
   );

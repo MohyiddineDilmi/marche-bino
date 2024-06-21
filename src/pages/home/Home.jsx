@@ -6,23 +6,24 @@ import Services from './Services';
 import Footer from './Footer';
 import Technologies from './Technologies';
 import {
-  useScroll,
-  useTransform,
   motion,
   useMotionTemplate,
   useMotionValue,
   animate,
 } from 'framer-motion';
-import { useRef, useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import SEO from '../components/SEO';
-import { erelysLogo } from '../../assets/erelys_logo.svg';
 
 const vBg =
   // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/full_bg.mp4';
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/bg_v_1.4.mp4';
 
 function Home() {
-  const COLORS = ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'];
+  // const COLORS = ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'];
+  const COLORS = useMemo(
+    () => ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'],
+    []
+  );
 
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(200% 150% at 0% 10%, #000000 50%, ${color})`;
@@ -34,7 +35,7 @@ function Home() {
       repeat: Infinity,
       repeatType: 'mirror',
     });
-  }, []);
+  }, [color, COLORS]);
 
   return (
     <>

@@ -18,7 +18,7 @@ const LanguageSwitcher = () => {
     const handleKeyDown = (event) => {
       if (
         (event.altKey && event.shiftKey) || // Windows: Alt + Shift
-        (event.metaKey && event.shiftKey)   // Mac: Command + Shift
+        (event.metaKey && event.shiftKey) // Mac: Command + Shift
       ) {
         toggleLanguage();
       }
