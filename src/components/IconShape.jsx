@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../modules/styles.module.css';
+import styles from '../modules/styles.module.css';
 
 const IconShape = ({ color, title, myIcon, description }) => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styles from '../../modules/styles.module.css';
+import styles from '../modules/styles.module.css';
 
 const ImagePlayer = ({ title, description, images, duration }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

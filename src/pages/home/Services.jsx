@@ -5,8 +5,8 @@ import imgSrc0 from '../../assets/i-1.png';
 import imgSrc1 from '../../assets/i-2.png';
 import imgSrc2 from '../../assets/i-3.png';
 import imgSrc5 from '../../assets/i-6.jpg';
-import ImagePlayer from '../components/ImagePlayer';
-import VideoPlayer from '../components/VideoPlayer';
+import ImagePlayer from '../../components/ImagePlayer';
+import VideoPlayer from '../../components/VideoPlayer';
 import { useTranslation } from 'react-i18next';
 
 const videoUrls = [

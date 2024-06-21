@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styles from '../../modules/styles.module.css';
+import styles from '../modules/styles.module.css';
 
 const VideoPlayer = ({ title, description, videoUrls }) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef();
 
   useEffect(() => {
+    const videoElement = videoRef.current;
+
     const options = {
       root: null,
       rootMargin: '0px',
@@ -14,16 +16,22 @@ const VideoPlayer = ({ title, description, videoUrls }) => {
 
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
-        videoRef.current.play();
+        if (videoElement.paused) {
+          videoElement.play().catch((error) => {
+            console.error('Error attempting to play video:', error);
+          });
+        }
       } else {
-        videoRef.current.pause();
+        if (!videoElement.paused) {
+          videoElement.pause();
+        }
       }
     }, options);
 
-    observer.observe(videoRef.current);
+    observer.observe(videoElement);
 
     return () => {
-      observer.unobserve(videoRef.current);
+      observer.unobserve(videoElement);
     };
   }, [videoUrls, currentVideoIndex]);
 
@@ -70,7 +78,6 @@ const VideoPlayer = ({ title, description, videoUrls }) => {
         ref={videoRef}
         style={{
           objectFit: 'cover',
-          // position: "absolute",
           top: '0',
           left: '0',
           width: '100%',

@@ -12,7 +12,7 @@ import {
   animate,
 } from 'framer-motion';
 import { useEffect, useMemo } from 'react';
-import SEO from '../components/SEO';
+import SEO from '../../components/SEO';
 
 const vBg =
   // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/full_bg.mp4';

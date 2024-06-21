@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css';
 import logoPath from '../../assets/erelys_logo.svg';
 import styles from '../../modules/styles.module.css';
-import ContactUs from '../components/ContactUs';
+import ContactUs from '../../components/ContactUs';
 import { useTranslation } from 'react-i18next';
 
 export default function Footer() {

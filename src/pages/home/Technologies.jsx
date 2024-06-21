@@ -1,7 +1,7 @@
 import React from 'react';
 import './technologies.css';
 import styles from '../../modules/styles.module.css';
-import IconShape from '../components/IconShape';
+import IconShape from '../../components/IconShape';
 import Icon4k from '../../assets/icons/4k-icon.svg';
 import IconAi from '../../assets/icons/ai-icon.svg';
 import IconDrone from '../../assets/icons/drone-icon.svg';
