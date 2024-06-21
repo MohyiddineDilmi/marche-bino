@@ -1,9 +1,9 @@
 import React from 'react';
-import AppBar from './AppBar';
+import AppBar from '../../components/AppBar';
 import Header from './Header';
 import './home.css';
 import Services from './Services';
-import Footer from './Footer';
+import Footer from '../../components/Footer';
 import Technologies from './Technologies';
 import {
   motion,

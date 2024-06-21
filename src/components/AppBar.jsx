@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoPath from '../../assets/erelys_logo.svg';
-import LanguageSwitcher from '../../components/LanguageSwitcher';
+import logoPath from '../assets/erelys_logo.svg';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const styles = {
   appBarContainer: {
