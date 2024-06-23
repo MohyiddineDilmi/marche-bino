@@ -54,6 +54,7 @@ function Header() {
               1000,
             ]}
             speed={50}
+            cursor={true}
             style={{
               fontFamily: 'NCTTorin-ExtraBold',
               textAlign: 'center',
@@ -65,7 +66,7 @@ function Header() {
               textFillColor: 'transparent',
               WebkitTextFillColor: 'transparent',
             }}
-            repeat={Infinity}
+            repeat={0}
           />
         </h1>
       </div>

@@ -10,6 +10,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+.title_secondary :local {
+  font-size: 48px;
+  font-family: 'NCTTorin-ExtraBold';
+  margin: 0% 10% 0% 10%;
+  text-align: center;
+
+  /** TEXT GRADIENT */
+  background: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .title_primary_simple :local {
   font-size: 64px;
   color: #ffffff;
