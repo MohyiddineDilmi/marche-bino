@@ -2,21 +2,23 @@ import React, { useEffect, useState } from 'react';
 import styles from '../../modules/styles.module.css';
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslation } from 'react-i18next';
+import { height } from '@mui/system';
 
 const headerStyles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    margin: '1rem',
+    alignItems: 'center',
     paddingTop: '4rem',
   },
   animatedText: {
-    display: 'inline',
+    maxWidth: '1080px',
   },
   '@media (max-width: 768px)': {
     container: {
       margin: '0rem',
+      paddingTop: '2rem',
     },
   },
 };
