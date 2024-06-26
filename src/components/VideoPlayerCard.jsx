@@ -49,7 +49,10 @@ function VideoPlayerCard({ src, poster }) {
     if (videoElement) {
       videoElement.addEventListener('loadedmetadata', handleLoadedMetadata);
       return () => {
-        videoElement.removeEventListener('loadedmetadata', handleLoadedMetadata);
+        videoElement.removeEventListener(
+          'loadedmetadata',
+          handleLoadedMetadata
+        );
       };
     }
   }, [src]);
