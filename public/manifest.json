@@ -1,6 +1,6 @@
 {
-  "short_name": "Erelys",
-  "name": "Taking your vision to new heights with creation, innovation, excellence, safety",
+  "short_name": "Marche Bino",
+  "name": "Flavors that set us apart.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#fff",
   "background_color": "#ffffff"
 }

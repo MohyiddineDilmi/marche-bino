@@ -5,7 +5,7 @@
   text-align: center;
 
   /** TEXT GRADIENT */
-  background: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  background: linear-gradient(45deg, #790a0a 0%, #ff4751 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -24,7 +24,7 @@
 
 .title_primary_simple :local {
   font-size: 64px;
-  color: #ffffff;
+  color: #000;
   font-family: 'NCTTorin-ExtraBold';
   margin: 0% 10% 0% 10%;
   text-align: center;
@@ -40,7 +40,7 @@
 
 .title :local {
   font-size: 14px;
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
   font-family: 'NCTTorin-Bold';
 }

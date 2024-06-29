@@ -11,8 +11,8 @@
   height: 200%; /* Adjust the height of the overlay as needed */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 95%
+      rgba(255, 255, 255, 0) 50%, /* Start with transparent white (white with alpha 0) */
+      rgba(255, 255, 255, 1) 100% /* End with solid white (white with alpha 1) */
   );
 }
 

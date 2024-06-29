@@ -55,7 +55,7 @@ const IconShape = ({ color, title, myIcon, description }) => {
             width: '12rem',
           }}
         >
-          <h1 className={`${styles.title_white}`}>{title}</h1>
+          <h1 className={`${styles.title_black}`}>{title}</h1>
           <p className={`${styles.text_no_margin}`}>{description}</p>
         </div>
       </div>

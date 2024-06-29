@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import logoPath from '../assets/erelys_logo.svg';
+import logoPath from '../assets/marche_bino.svg';
 import styles from '../modules/styles.module.css';
 import ContactUs from './ContactUs';
 import { useTranslation } from 'react-i18next';
@@ -39,14 +39,14 @@ export default function Footer() {
         <div className="text-container">
           {footer_data.map((data, index) => (
             <div className="text-item" key={index}>
-              <h2 className={styles.title_white}> {data.title} </h2>
+              <h2 className={styles.title_black}> {data.title} </h2>
               <p className={styles.text_no_margin}> {data.description} </p>
             </div>
           ))}
         </div>
 
         <div className="contact-container">
-          <h2 className={styles.title_white}>{t('contact_us')}</h2>
+          <h2 className={styles.title_black}>{t('contact_us')}</h2>
           <ContactUs />
           <p className={styles.text_no_margin}>
             © 2024 Erelys. All rights reserved.

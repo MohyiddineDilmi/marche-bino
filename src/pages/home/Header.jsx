@@ -62,7 +62,7 @@ function Header() {
               textAlign: 'center',
               color: '#b78143',
               backgroundImage:
-                '-webkit-linear-gradient(45deg, #FFFFFF 70%, #fbda61 80%, #ff5acd 100%, #FF6F07 50%)',
+                '-webkit-linear-gradient(45deg, #000 70%, #ff4751 80%, #790a0a 100%, #790a0a 50%)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               textFillColor: 'transparent',

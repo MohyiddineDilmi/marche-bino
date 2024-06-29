@@ -21,12 +21,12 @@ const vBg =
 function Home() {
   // const COLORS = ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'];
   const COLORS = useMemo(
-    () => ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'],
+    () => ['#FFAB2E', '#E764FC', '#FC6467', '#E72A15'],
     []
   );
 
   const color = useMotionValue(COLORS[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(200% 150% at 0% 10%, #000000 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(200% 150% at 0% 10%, #fff 50%, ${color})`;
 
   useEffect(() => {
     animate(color, COLORS, {
@@ -41,7 +41,7 @@ function Home() {
     <>
       <div
         style={{
-          backgroundColor: 'black',
+          backgroundColor: 'white',
         }}
       >
         <SEO

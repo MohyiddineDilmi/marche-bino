@@ -65,7 +65,6 @@ export default function Technologies() {
           myIcon={technologies[0].iconPath}
           description={t('high_resolution_description')}
         />
-        {/* <IconShape color="#FF6F07" title={technologies[1].title} myIcon={technologies[1].iconPath} description={technologies[1].description}/> */}
         <IconShape
           color="#00D1FF"
           title={t('real_time_streaming')}

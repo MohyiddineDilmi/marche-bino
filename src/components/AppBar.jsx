@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoPath from '../assets/erelys_logo.svg';
+import logoPath from '../assets/marche_bino.svg';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const styles = {
@@ -13,7 +13,7 @@ const styles = {
     margin: '0 auto',
   },
   logoImg: {
-    height: '2rem',
+    height: '4rem',
   },
   responsive: {
     '@media screen and (max-width: 768px)': {

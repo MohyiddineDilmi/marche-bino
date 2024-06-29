@@ -17,15 +17,13 @@ const videoUrls = [
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/v-6_resized.mp4',
 ];
 
-const videoUrls_1 = [
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/__v_0.mp4',
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/__v_3.mp4',
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/__v_5.mp4',
-];
 
 const imgUrls = [
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/images/__i_0.png',
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/images/__i_2.png',
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/services_img_1.png',
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/services_img_2.png',
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/services_img_3.png',
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/services_img_4.png',
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/services_img_5.png',
 ];
 
 function Services() {
@@ -64,25 +62,7 @@ function Services() {
         </div>
       </div>
 
-      {/* <VideoPlayer videoUrls={videoUrls} /> */}
-      <div className="services_list">
-        <div className="srvice-card">
-          <ImagePlayer
-            title={t('thermal_and_infrared_imaging')}
-            description={t('thermal_and_infrared_imaging_description')}
-            images={[imgSrc0, imgSrc1, imgSrc2, imgSrc5]}
-            duration={5}
-          />
-        </div>
-
-        <div className="srvice-card">
-          <VideoPlayer
-            title={t('mapping_and_measurement')}
-            description={t('mapping_and_measurement_description')}
-            videoUrls={videoUrls_1}
-          />
-        </div>
-      </div>
+      
     </div>
   );
 }
