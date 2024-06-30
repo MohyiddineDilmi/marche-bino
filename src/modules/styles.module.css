@@ -30,6 +30,14 @@
   text-align: center;
 }
 
+.title_primary_medium :local {
+  font-size: 34px;
+  color: #000;
+  font-family: 'NCTTorin-ExtraBold';
+  margin: 0% 10% 0% 10%;
+  text-align: center;
+}
+
 .title_primary_white :local {
   font-size: 48px;
   color: #ffffff;

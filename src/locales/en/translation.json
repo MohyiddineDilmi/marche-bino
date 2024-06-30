@@ -44,8 +44,11 @@
   "values": "Values",
   "values_description": "At Marche Bino, we value freshness, quality, and customer satisfaction. We believe in supporting local suppliers and delivering products that our customers can trust. Our core values include integrity, community, and a passion for great food.",
 
-  "cinematic": "Cinematic",
-  "cinematic_description": "Artfully composed scenes with dramatic lighting and high production values.",
-
-  "fpv_porfolio_description": "Immersive, first-person perspective footage showcasing dynamic and thrilling views."
+  "about": "About Bibo",
+  "about_description": [
+    "In the heart of Montreal, a father and son began a culinary journey that shaped their family's legacy, starting with Marche Bino, a market built on quality and tradition.",
+    "Marche Bino was passed to Mr. Pazooki by its previous owner, Mr. Bino, who requested that the Bino name be preserved. Mr. Pazooki vowed to honor this request.",
+    "In 2019, their love for food led to the creation of Distribution Bino, focusing on pizza products and meats, becoming a key part of Montreal's culinary scene.",
+    "With each delivery, Distribution Bino honors its roots, reflecting a commitment to quality and the bond between father and son. From Marche Bino to Distribution Bino, the journey continues, blending family, tradition, and a passion for exceptional cuisine."
+  ]
 }

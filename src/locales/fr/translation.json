@@ -42,5 +42,13 @@
   "mission_description": "Erelys s'engage à fournir des services de drones sûrs, efficaces et de haute qualité qui dépassent les attentes des clients. Nous offrons des solutions innovantes et personnalisées tout en maintenant les normes de sécurité les plus élevées et la conformité réglementaire. Notre engagement est de fournir un service client exceptionnel et de bâtir des relations durables avec nos clients.",
 
   "values": "Valeurs",
-  "values_description": "Erelys est engagé dans l'innovation, utilisant la technologie et les techniques les plus récentes pour diriger l'industrie des services de drones. La sécurité est notre priorité absolue, garantissant que toutes les opérations sont menées en toute sécurité et en conformité avec les réglementations. Nous fournissons des services de haute qualité avec une équipe dédiée qui s'efforce d'exceller. Un service client exceptionnel est au cœur de notre activité, nous répondons aux besoins des clients et travaillons en étroite collaboration pour atteindre leurs objectifs. L'intégrité nous guide, nous opérons avec honnêteté, équité et transparence, construisant la confiance et la crédibilité avec nos clients et partenaires."
+  "values_description": "Erelys est engagé dans l'innovation, utilisant la technologie et les techniques les plus récentes pour diriger l'industrie des services de drones. La sécurité est notre priorité absolue, garantissant que toutes les opérations sont menées en toute sécurité et en conformité avec les réglementations. Nous fournissons des services de haute qualité avec une équipe dédiée qui s'efforce d'exceller. Un service client exceptionnel est au cœur de notre activité, nous répondons aux besoins des clients et travaillons en étroite collaboration pour atteindre leurs objectifs. L'intégrité nous guide, nous opérons avec honnêteté, équité et transparence, construisant la confiance et la crédibilité avec nos clients et partenaires.",
+
+  "about": "À propos de Bibo",
+  "about_description": [
+    "Au cœur de Montréal, un père et son fils ont commencé une aventure culinaire qui a façonné l'héritage de leur famille, en commençant par le Marché Bino, un marché fondé sur la qualité et la tradition.",
+    "Le Marché Bino a été transmis à M. Pazooki par son ancien propriétaire, M. Bino, qui a demandé que le nom Bino soit préservé. M. Pazooki a juré d'honorer cette demande.",
+    "En 2019, leur amour pour la nourriture a conduit à la création de Distribution Bino, spécialisée dans les produits de pizza et les viandes, devenant une partie clé de la scène culinaire de Montréal.",
+    "À chaque livraison, Distribution Bino honore ses racines, reflétant un engagement envers la qualité et le lien entre père et fils. Du Marché Bino à Distribution Bino, le voyage continue, mélangeant famille, tradition et passion pour une cuisine exceptionnelle."
+  ]
 }

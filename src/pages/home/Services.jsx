@@ -5,14 +5,12 @@ import { useTranslation } from 'react-i18next';
 import ImagePlayer from '../../components/ImagePlayer';
 import VideoPlayer from '../../components/VideoPlayer';
 
-
 const videoUrls = [
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/v_1.mp4',
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/v_2.mp4',
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/v_3.mp4',
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/v_4.mp4',
 ];
-
 
 const imgUrls = [
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/services_img_1.png',
@@ -57,8 +55,6 @@ function Services() {
           />
         </div>
       </div>
-
-      
     </div>
   );
 }

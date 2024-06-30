@@ -6,9 +6,7 @@ import { faClone, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
 
-
 function ContactUs() {
-
   const { t } = useTranslation();
 
   const buttonStyle = {
@@ -62,7 +60,9 @@ function ContactUs() {
         <button onClick={handleButtonClick} style={buttonStyle}>
           <FontAwesomeIcon icon={logo} style={iconStyle} />
         </button>
-        <p className={styles.text_no_margin}>1951 Rue Jean-Talon E, Montréal, QC H2E 1T9</p>
+        <p className={styles.text_no_margin}>
+          1951 Rue Jean-Talon E, Montréal, QC H2E 1T9
+        </p>
         <p className={styles.title}>{t('phone_number')}</p>
         <p className={styles.text_no_margin}>5147284523</p>
       </div>
@@ -73,9 +73,7 @@ function ContactUs() {
           </button> */}
         <button
           style={buttonStyle}
-          onClick={() =>
-            window.open('https://marchebino.com/')
-          }
+          onClick={() => window.open('https://marchebino.com/')}
         >
           <FontAwesomeIcon icon={faInstagram} style={iconStyle} />
         </button>

@@ -4,8 +4,9 @@ import Header from './Header';
 import './home.css';
 import Services from './Services';
 import Footer from '../../components/Footer';
-import Technologies from './Technologies';
+import BrandMarquee from '../../components/BrandMarquee';
 import Promotions from './Promotions';
+import About from './About';
 import {
   motion,
   useMotionTemplate,
@@ -76,9 +77,19 @@ function Home() {
               <Header />
             </div>
           </div>
-          <Services />
-          <Promotions />
-          {/* <Technologies /> */}
+          <div
+            style={{
+              maxWidth: '1080px',
+              margin: '80px auto',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Services />
+            <Promotions />
+            <BrandMarquee />
+            <About />
+          </div>
           <Footer />
         </motion.div>
       </div>
