@@ -15,8 +15,8 @@ import { useEffect, useMemo } from 'react';
 import SEO from '../../components/SEO';
 
 const vBg =
-  // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/full_bg.mp4';
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/videos/bg_v_1.4.mp4';
+  // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/binovideos/full_bg.mp4';
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/bg_video.mp4';
 
 function Home() {
   // const COLORS = ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'];
@@ -45,11 +45,11 @@ function Home() {
         }}
       >
         <SEO
-          title="Erelys Drone Services"
-          description="Discover Erelys Drone Services for Cinematography, Videography, Aerial Photography, Thermography, Photogrammetry, and Construction Inspections."
-          url="https://www.erelys.com/"
-          image="https://raw.githubusercontent.com/MohyiddineDilmi/data/main/images/home_image.png"
-        />
+        title="Marche Bino: Your Neighborhood Market"
+        description="Discover Marche Bino: Your Neighborhood Market for Freshness, Quality, Convenience, and Variety."
+        url="https://www.marchebino.com/"
+        image="https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/seo.png"
+      />
         <motion.div
           style={{
             background: backgroundImage,
