@@ -5,7 +5,7 @@
   text-align: center;
 
   /** TEXT GRADIENT */
-  background: linear-gradient(45deg, #790a0a 0%, #ff4751 100%);
+  background: linear-gradient(45deg, #a83232 0%, #ff7f7f 50%, #fbff00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

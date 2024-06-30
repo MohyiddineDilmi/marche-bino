@@ -49,7 +49,7 @@ export default function Footer() {
           <h2 className={styles.title_black}>{t('contact_us')}</h2>
           <ContactUs />
           <p className={styles.text_no_margin}>
-            © 2024 Erelys. All rights reserved.
+            © 2024 Marche Bino. All rights reserved.
             <br />
             Privacy Policy - Terms and Conditions
           </p>

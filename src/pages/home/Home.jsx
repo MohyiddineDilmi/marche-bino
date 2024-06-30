@@ -5,6 +5,7 @@ import './home.css';
 import Services from './Services';
 import Footer from '../../components/Footer';
 import Technologies from './Technologies';
+import Promotions from './Promotions';
 import {
   motion,
   useMotionTemplate,
@@ -19,19 +20,19 @@ const vBg =
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/bg_video.mp4';
 
 function Home() {
-  // const COLORS = ['#AD00FF', '#00FFD1', '#00D1FF', '#FF6F07'];
+  // const COLORS = ['#1E90FF', '#00FFD1', '#00D1FF', '#FFD700'];
   const COLORS = useMemo(
-    () => ['#FFAB2E', '#E764FC', '#FC6467', '#E72A15'],
+    () => ['#FFD700', '#32CD32', '#FC6467', '#1E90FF'],
     []
   );
 
   const color = useMotionValue(COLORS[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(200% 150% at 0% 10%, #fff 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(200% 120% at 20% 10%, #fff 50%, ${color})`;
 
   useEffect(() => {
     animate(color, COLORS, {
       ease: 'easeInOut',
-      duration: 10,
+      duration: 20,
       repeat: Infinity,
       repeatType: 'mirror',
     });
@@ -45,11 +46,11 @@ function Home() {
         }}
       >
         <SEO
-        title="Marche Bino: Your Neighborhood Market"
-        description="Discover Marche Bino: Your Neighborhood Market for Freshness, Quality, Convenience, and Variety."
-        url="https://www.marchebino.com/"
-        image="https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/seo.png"
-      />
+          title="Marche Bino: Your Neighborhood Market"
+          description="Discover Marche Bino: Your Neighborhood Market for Freshness, Quality, Convenience, and Variety."
+          url="https://www.marchebino.com/"
+          image="https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/seo.png"
+        />
         <motion.div
           style={{
             background: backgroundImage,
@@ -76,7 +77,8 @@ function Home() {
             </div>
           </div>
           <Services />
-          <Technologies />
+          <Promotions />
+          {/* <Technologies /> */}
           <Footer />
         </motion.div>
       </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import './services.css';
 import styles from '../../modules/styles.module.css';
+import { useTranslation } from 'react-i18next';
 import ImagePlayer from '../../components/ImagePlayer';
 import VideoPlayer from '../../components/VideoPlayer';
-import { useTranslation } from 'react-i18next';
+
 
 const videoUrls = [
   'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/v_1.mp4',
@@ -41,16 +42,16 @@ function Services() {
       <div className="services_list">
         <div className="srvice-card">
           <VideoPlayer
-            title={t('visual_arts')}
-            description={t('visual_arts_description')}
+            title={t('section_1')}
+            description={t('section_1_description')}
             videoUrls={videoUrls}
           />
         </div>
 
         <div className="srvice-card">
           <ImagePlayer
-            title={t('inspection_and_surveying')}
-            description={t('inspection_and_surveying_description')}
+            title={t('section_2')}
+            description={t('section_2_description')}
             images={imgUrls}
             duration={5}
           />

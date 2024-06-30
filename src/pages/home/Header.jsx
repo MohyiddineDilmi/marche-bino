@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import styles from '../../modules/styles.module.css';
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslation } from 'react-i18next';
-import { height } from '@mui/system';
 
 const headerStyles = {
   container: {
@@ -62,7 +61,7 @@ function Header() {
               textAlign: 'center',
               color: '#b78143',
               backgroundImage:
-                '-webkit-linear-gradient(45deg, #000 70%, #ff4751 80%, #790a0a 100%, #790a0a 50%)',
+                '-webkit-linear-gradient(45deg, #fff 70%, #ff7f7f 80%, #fbff00 100%, #a83232 50%)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               textFillColor: 'transparent',

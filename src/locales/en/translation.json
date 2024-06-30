@@ -7,11 +7,14 @@
   "our_services": "Finest Selection of Fresh Foods",
   "our_services_description": "Discover Marche Bino's curated collection of premium meat, poultry, seafood, fresh produce, and pantry staples. Enjoy the best of Montreal's local flavors and quality in every bite.",
 
-  "visual_arts": "Premium Meat",
-  "visual_arts_description": "Discover high-quality meat, poultry, and seafood at Marche Bino. Sourced from trusted suppliers for ultimate freshness and taste.",
+  "section_1": "Premium Meat",
+  "section_1_description": "Discover high-quality meat, poultry, and seafood at Marche Bino. Sourced from trusted suppliers for ultimate freshness and taste.",
 
-  "inspection_and_surveying": "Pantry Staples",
-  "inspection_and_surveying_description": "Find the freshest fruits, vegetables, and essential pantry items at Marche Bino. Your one-stop shop for all your grocery needs.",
+  "section_2": "Pantry Staples",
+  "section_2_description": "Find the freshest fruits, vegetables, and essential pantry items at Marche Bino. Your one-stop shop for all your grocery needs.",
+
+  "promotions": "Sale at Marche Bino!",
+  "promotions_description": "Enjoy up to 50% off on fresh, organic produce and gourmet specialties at Marche Bino. Visit us in Montreal for unbeatable deals and exceptional quality. Hurry, these hot summer savings won't last!",
 
   "our_technologies": "Our Technologies",
   "our_technologies_description": "With our unwavering focus on high-advanced technologies, we bring a new dimension to capturing stunning visuals from the skies.",
@@ -29,6 +32,8 @@
   "ai_and_machine_learning_description": "Leverage the power of AI and machine learning for precise analysis of all drone data, delivering unmatched accuracy",
 
   "contact_us": "Contact Us",
+
+  "phone_number": "Phone Number",
 
   "vision": "Vision",
   "vision_description": "Marche Bino envisions becoming Montreal's go-to neighborhood market, known for our dedication to providing fresh, high-quality products. Our mission is to bring the best of local and global flavors to our community, enhancing everyday meals with exceptional ingredients and unparalleled service.",
