@@ -1,0 +1,33 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh; /* Ensure full height of the viewport */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for better content alignment */
+  margin: 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
+}

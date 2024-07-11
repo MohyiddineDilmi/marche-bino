@@ -17,12 +17,18 @@ L.Icon.Default.mergeOptions({
 const center = [45.5493, -73.6061]; // Coordinates for Montreal
 
 const StoreLocation = () => {
+  const isMobile = window.innerWidth <= 768;
+
+  const styles = {
+    mapContainer: {
+      height: isMobile ? '300px' : '400px',
+      width: isMobile ? '100%' : '400px',
+      borderRadius: '40px',
+    },
+  };
+
   return (
-    <MapContainer
-      center={center}
-      zoom={13}
-      style={{ height: '400px', width: '400px', borderRadius: '40px' }}
-    >
+    <MapContainer center={center} zoom={13} style={styles.mapContainer}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={center}>
         <Popup>Marche Bino 1951 Rue Jean-Talon E, Montréal, QC H2E 1T9</Popup>

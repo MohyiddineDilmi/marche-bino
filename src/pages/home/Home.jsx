@@ -7,6 +7,7 @@ import Footer from '../../components/Footer';
 import BrandMarquee from '../../components/BrandMarquee';
 import Promotions from './Promotions';
 import About from './About';
+import Location from './Location';
 import {
   motion,
   useMotionTemplate,
@@ -88,6 +89,7 @@ function Home() {
             <Services />
             <Promotions />
             <BrandMarquee />
+            <Location />
             <About />
           </div>
           <Footer />
