@@ -13,6 +13,11 @@
   flex: 1;
 }
 
+.responsive-image {
+    max-width: 200%;
+    height: auto;
+  }
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column;

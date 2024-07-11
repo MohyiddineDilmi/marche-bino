@@ -83,11 +83,13 @@ function About() {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                width: '100px',
               }}
             >
               <img
                 src="https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/distribution_bino.png"
                 alt="Distribution Bino"
+                className="responsive-image"
               />
             </motion.a>
           </div>
