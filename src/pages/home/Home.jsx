@@ -19,7 +19,7 @@ import SEO from '../../components/SEO';
 
 const vBg =
   // 'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/binovideos/full_bg.mp4';
-  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/bg_video.mp4';
+  'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/videos/bg_video_1.0.mp4';
 
 function Home() {
   // const COLORS = ['#1E90FF', '#00FFD1', '#00D1FF', '#FFD700'];

@@ -102,11 +102,10 @@ const ThreeDImageSlider = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
       >
         {[
-          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_1.jpg',
-          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_2.jpg',
-          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_3.jpg',
-          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_4.jpg',
-          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_5.jpg',
+          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_1.png',
+          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_2.png',
+          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_3.png',
+          'https://raw.githubusercontent.com/MohyiddineDilmi/data/main/bino/images/promo_4.png',
         ].map((src, index) => (
           <SwiperSlide style={slideStyle} key={index}>
             <img
